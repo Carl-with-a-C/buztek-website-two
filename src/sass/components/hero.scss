@@ -1,0 +1,33 @@
+.hero-section {
+  width: 100%;
+}
+
+.hero-splash-container {
+  width: 100%;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  span {
+    margin-left: -10px;
+    font-family: var(--ff-heading);
+    font-size: calc(var(--spacing-256) * 1.75);
+  }
+}
+
+.hero-blurb-video-container {
+  margin-top: var(--spacing-128);
+  display: flex;
+  gap: var(--spacing-256);
+  padding-bottom: var(--spacing-128);
+  iframe {
+    border-radius: var(--spacing-16);
+  }
+}
+
+.hero-blurb-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-64);
+}
