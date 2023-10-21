@@ -1,9 +1,11 @@
+import Nav from "./Compnents/Nav";
+
 import "./sass/main.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Nav />
     </div>
   );
 }
