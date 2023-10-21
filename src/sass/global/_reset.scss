@@ -76,7 +76,16 @@ main {
 
 body {
   line-height: 1;
+  background-color: $white;
+  color: $black;
 }
+
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     background-color: $black;
+//     color: $white;
+//   }
+// }
 
 ol,
 ul {
@@ -111,8 +120,6 @@ html {
 
 .App {
   width: 100vw;
-  background-color: $white;
-  color: $black;
   position: relative;
 }
 
@@ -125,4 +132,13 @@ html {
 
 button {
   cursor: pointer;
+}
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
 }

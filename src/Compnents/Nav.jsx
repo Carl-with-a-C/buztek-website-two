@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const date = new Date();
@@ -7,7 +7,12 @@ const Nav = () => {
 
   return (
     <header className="header">
-      <div className="nav-container container">
+      <motion.nav
+        className="nav-container container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.75, duration: 1 }}
+      >
         <div className="logo-container">
           <span>Buztek</span>
         </div>
@@ -41,7 +46,7 @@ const Nav = () => {
             <span className="slider round"></span>
           </label>
         </div>
-      </div>
+      </motion.nav>
     </header>
   );
 };

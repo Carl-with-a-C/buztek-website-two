@@ -3,8 +3,8 @@
   position: sticky;
   top: 0;
   z-index: 11;
-  color: white;
-  background-color: black;
+  color: $white;
+  background-color: $black;
   transition: 0.3s;
   display: block;
   mix-blend-mode: difference;
@@ -72,11 +72,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: $black;
   -webkit-transition: 0.6s;
   transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
   &:hover {
-    background-color: gray;
+    background-color: darkgray;
   }
 }
 
@@ -87,22 +87,22 @@
   width: 21px;
   right: 2px;
   bottom: 2px;
-  background-color: white;
+  background-color: $white;
   -webkit-transition: 0.6s;
   transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: gray;
+  background-color: darkgray;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px gray;
+  box-shadow: 0 0 1px darkgray;
 }
 
 input:checked + .slider:before {
-  background-color: black;
+  background-color: $black;
   -webkit-transform: translateX(-24px);
   -ms-transform: translateX(-24px);
   transform: translateX(-24px);
