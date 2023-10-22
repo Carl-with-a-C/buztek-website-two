@@ -14,7 +14,6 @@ h2 {
   font-family: var(--ff-para);
   line-height: 0.8;
   letter-spacing: -1px;
-  text-transform: uppercase;
   font-weight: 500;
 }
 
@@ -39,7 +38,6 @@ p {
   h1 {
     font-size: var(--fs-144);
     font-family: var(--ff-heading);
-    // letter-spacing: -4px;
     text-transform: uppercase;
     font-weight: 900;
   }
@@ -47,10 +45,9 @@ p {
   h2 {
     font-size: var(--fs-72);
     font-family: var(--ff-para);
-    line-height: 0.8;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    font-weight: 500;
+    line-height: 105%;
+    letter-spacing: 102%;
+    font-weight: 400;
   }
 
   h3 {

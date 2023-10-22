@@ -3,22 +3,22 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  const scaleYB = useTransform(scrollYProgress, [0.2, 1], ["0%", "-100%"]);
-  const scaleYU = useTransform(scrollYProgress, [0.3, 1], ["0%", "-100%"]);
-  const scaleYZ = useTransform(scrollYProgress, [0.35, 1], ["0%", "-100%"]);
-  const scaleYT = useTransform(scrollYProgress, [0.4, 1], ["0%", "-95%"]);
-  const scaleYE = useTransform(scrollYProgress, [0.45, 1], ["0%", "-90%"]);
-  const scaleYK = useTransform(scrollYProgress, [0.5, 1], ["0%", "-85%"]);
+  const scaleYB = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
+  const scaleYU = useTransform(scrollYProgress, [0.05, 1], ["0%", "-200%"]);
+  const scaleYZ = useTransform(scrollYProgress, [0.1, 1], ["0%", "-200%"]);
+  const scaleYT = useTransform(scrollYProgress, [0.15, 1], ["0%", "-190%"]);
+  const scaleYE = useTransform(scrollYProgress, [0.2, 1], ["0%", "-180%"]);
+  const scaleYK = useTransform(scrollYProgress, [0.25, 1], ["0%", "-170%"]);
 
-  const scaleYblurb = useTransform(scrollYProgress, [0.1, 1], ["0%", "-40%"]);
+  const scaleYblurb = useTransform(scrollYProgress, [0, 0.3], ["0%", "-20%"]);
 
-  const scaleYopacity = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
-
-  const scaleYvideoY = useTransform(
+  const scaleYopacity = useTransform(
     scrollYProgress,
-    [0, 0.75],
-    ["30%", "100%"]
+    [0, 0.25],
+    ["100%", "0%"]
   );
+
+  const scaleYvideoY = useTransform(scrollYProgress, [0, 0.3], ["30%", "100%"]);
 
   const container = {
     hidden: { opacity: 1 },
