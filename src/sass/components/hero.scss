@@ -19,18 +19,17 @@
 
 .hero-blurb-video-container {
   position: relative;
-  margin-top: var(--spacing-64);
+  height: 100vh;
   display: flex;
   gap: var(--spacing-256);
   justify-content: space-between;
-  padding-bottom: var(--spacing-128);
+  margin: var(--spacing-64) 0 var(--spacing-256) 0;
   iframe {
     border-radius: var(--spacing-16);
     position: absolute;
     top: 0;
     right: 0;
   }
-  height: 100vh;
 }
 
 .hero-video {

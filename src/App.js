@@ -1,5 +1,6 @@
 import Nav from "./Compnents/Nav";
 import Hero from "./Compnents/Hero";
+import About from "./Compnents/About";
 import SmoothScroll from "./Helpers/SmoothScroll.jsx";
 
 import "./sass/main.scss";
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <SmoothScroll>
         <Hero />
+        <About />
       </SmoothScroll>
     </div>
   );
