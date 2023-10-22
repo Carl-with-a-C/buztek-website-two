@@ -1,21 +1,24 @@
-import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  const scaleYB = useTransform(scrollYProgress, [0.2, 0.9], ["0%", "-100%"]);
-  const scaleYU = useTransform(scrollYProgress, [0.3, 0.9], ["0%", "-95%"]);
-  const scaleYZ = useTransform(scrollYProgress, [0.4, 0.9], ["0%", "-90%"]);
-  const scaleYT = useTransform(scrollYProgress, [0.5, 0.9], ["0%", "-85%"]);
-  const scaleYE = useTransform(scrollYProgress, [0.6, 0.9], ["0%", "-80%"]);
-  const scaleYK = useTransform(scrollYProgress, [0.7, 0.9], ["0%", "-75%"]);
+  const scaleYB = useTransform(scrollYProgress, [0.2, 1], ["0%", "-100%"]);
+  const scaleYU = useTransform(scrollYProgress, [0.3, 1], ["0%", "-100%"]);
+  const scaleYZ = useTransform(scrollYProgress, [0.35, 1], ["0%", "-100%"]);
+  const scaleYT = useTransform(scrollYProgress, [0.4, 1], ["0%", "-95%"]);
+  const scaleYE = useTransform(scrollYProgress, [0.45, 1], ["0%", "-90%"]);
+  const scaleYK = useTransform(scrollYProgress, [0.5, 1], ["0%", "-85%"]);
 
   const scaleYblurb = useTransform(scrollYProgress, [0.1, 1], ["0%", "-40%"]);
 
   const scaleYopacity = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
-  const scaleYvideoY = useTransform(scrollYProgress, [0, 0.5], ["0%", "40%"]);
+  const scaleYvideoY = useTransform(
+    scrollYProgress,
+    [0, 0.75],
+    ["30%", "100%"]
+  );
 
   const container = {
     hidden: { opacity: 1 },
@@ -29,9 +32,10 @@ const Hero = () => {
   };
 
   const letter = {
-    hidden: { rotateX: "-90deg" },
+    hidden: { rotateX: "-90deg", color: "rgba(0, 200, 200, 1)" },
     show: {
       rotateX: "0deg",
+      color: "rgba(0, 0, 0, 1)",
       transition: {
         type: "spring",
         bounce: 0,
@@ -186,9 +190,6 @@ const Hero = () => {
           variants={videoReveal}
           initial="hidden"
           animate="show"
-          style={{
-            y: scaleYvideoY,
-          }}
         >
           <motion.iframe
             className="hero-video"
@@ -197,8 +198,10 @@ const Hero = () => {
             autoPlay
             loop
             muted
+            style={{
+              width: scaleYvideoY,
+            }}
           ></motion.iframe>
-          <h4>Buztek Showreel 2023</h4>
         </motion.div>
       </motion.div>
     </section>
