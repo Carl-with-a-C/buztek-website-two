@@ -4,6 +4,7 @@ import About from "./Compnents/About";
 import Projects from "./Compnents/Projects";
 import Services from "./Compnents/Services";
 import Contact from "./Compnents/Contact";
+import Footer from "./Compnents/Footer";
 import SmoothScroll from "./Helpers/SmoothScroll.jsx";
 
 import "./sass/main.scss";
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Services />
         <Contact />
+        <Footer />
       </SmoothScroll>
     </div>
   );
