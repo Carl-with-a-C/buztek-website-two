@@ -53,7 +53,7 @@
     width: 0;
     height: 0;
   }
-  -webkit-transition: 0.6s;
+  -webkit-transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
   transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
 }
 
