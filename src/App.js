@@ -3,6 +3,7 @@ import Hero from "./Compnents/Hero";
 import About from "./Compnents/About";
 import Projects from "./Compnents/Projects";
 import Services from "./Compnents/Services";
+import Contact from "./Compnents/Contact";
 import SmoothScroll from "./Helpers/SmoothScroll.jsx";
 
 import "./sass/main.scss";
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Projects />
         <Services />
+        <Contact />
       </SmoothScroll>
     </div>
   );
