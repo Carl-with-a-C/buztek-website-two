@@ -1,8 +1,21 @@
+import { motion } from "framer-motion";
+
 import DesignImg from "../Multimedia/Images/design-colors.webp";
 import BuildImg from "../Multimedia/Images/build-colors.jpg";
 import SecureImg from "../Multimedia/Images/secure-colors.jpeg";
 
 const Services = () => {
+  const serviceLetter = {
+    hidden: { opacity: 0.25 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.78, 0.01, 0.21, 1],
+      },
+    },
+  };
+
   return (
     <section className="services-section-container container">
       <div className="services-header-container">
@@ -22,31 +35,64 @@ const Services = () => {
       </div>
       <div className="services-main-container">
         <div className="service-container service-one">
-          <img src={DesignImg} alt="colourful pencils" />
-          <h1>DESIGN</h1>
-          <h4>
-            LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-            elit, sit amet, consectetur <br />
-            adipiscing elit
-          </h4>
+          <div className="service-img-container">
+            <img src={DesignImg} alt="colourful pencils" />
+          </div>
+          <motion.h1
+            variants={serviceLetter}
+            initial="hidden"
+            whileHover="show"
+            whileFocus="show"
+          >
+            DESIGN
+          </motion.h1>
+          <div className="service-blurb-container">
+            <h4>
+              Our design process will help to
+              <br /> identify your brand story and express it <br />
+              in a compelling way
+            </h4>
+          </div>
         </div>
         <div className="service-container service-two">
-          <img src={BuildImg} alt="computer code on a screen" />
-          <h1>BUILD</h1>
-          <h4>
-            LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-            elit, sit amet, consectetur <br />
-            adipiscing elit
-          </h4>
+          <div className="service-img-container">
+            <img src={BuildImg} alt="computer code on a screen" />
+          </div>
+          <motion.h1
+            variants={serviceLetter}
+            initial="hidden"
+            whileHover="show"
+            whileFocus="show"
+          >
+            BUILD
+          </motion.h1>
+          <div className="service-blurb-container">
+            <h4>
+              LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
+              elit, sit amet, consectetur <br />
+              adipiscing elit
+            </h4>
+          </div>
         </div>
         <div className="service-container service-three">
-          <img src={SecureImg} alt="a lock and chain on a door" />
-          <h1>SECURE</h1>
-          <h4>
-            LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-            elit, sit amet, consectetur <br />
-            adipiscing elit
-          </h4>
+          <div className="service-img-container">
+            <img src={SecureImg} alt="a lock and chain on a door" />
+          </div>
+          <motion.h1
+            variants={serviceLetter}
+            initial="hidden"
+            whileHover="show"
+            whileFocus="show"
+          >
+            SECURE
+          </motion.h1>
+          <div className="service-blurb-container">
+            <h4>
+              LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
+              elit, sit amet, consectetur <br />
+              adipiscing elit
+            </h4>
+          </div>
         </div>
       </div>
     </section>

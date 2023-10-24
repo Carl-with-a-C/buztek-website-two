@@ -22,7 +22,7 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0,
-        duration: 0.5,
+        duration: 0.75,
         ease: [0.78, 0.01, 0.21, 1],
       },
     },
@@ -35,7 +35,7 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0,
-        duration: 0.5,
+        duration: 0.75,
         ease: [0.78, 0.01, 0.21, 1],
         stagger: 0.15,
       },
@@ -49,9 +49,23 @@ const About = () => {
       y: "0px",
       transition: {
         delay: 0.1,
-        duration: 0.5,
+        duration: 0.75,
         ease: [0.78, 0.01, 0.21, 1],
         when: "beforeChildren",
+      },
+    },
+  };
+
+  const arrow = {
+    hidden: { rotateX: "-90deg", color: "rgba(0, 200, 200, 1)" },
+    show: {
+      rotateX: "0deg",
+      color: "rgba(0, 0, 0, 1)",
+      transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 1.5,
+        ease: [0.78, 0.01, 0.21, 1],
       },
     },
   };
@@ -60,7 +74,13 @@ const About = () => {
     <section className="about-section-container container">
       <div className="about-container">
         <div className="arrow-container">
-          <img src={ArrowR} alt="An arrow pointing to the right" />
+          <motion.img
+            src={ArrowR}
+            alt="An arrow pointing to the right"
+            variants={arrow}
+            initial="hidden"
+            whileInView="show"
+          />
         </div>
         <div className="about-content-container">
           <motion.div

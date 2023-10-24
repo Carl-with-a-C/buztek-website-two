@@ -202,6 +202,7 @@ const Hero = () => {
             autoPlay
             loop
             muted
+            layout
             style={{
               width: scaleYvideoY,
             }}
