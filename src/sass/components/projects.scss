@@ -5,8 +5,13 @@
 .projects-header-section {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: var(--spacing-64);
+}
+
+.projects-title-container {
+  display: flex;
+  overflow: hidden;
 }
 
 .projects-img-section {
@@ -50,6 +55,7 @@
 
 .projects-cta-content {
   display: flex;
+  align-items: baseline;
   gap: var(--spacing-32);
 }
 

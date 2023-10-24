@@ -13,9 +13,45 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-64);
-  align-items: flex-end;
-  margin-right: var(--spacing-256);
+  align-items: flex-start;
+  margin-left: var(--spacing-256);
   padding-bottom: var(--spacing-128);
+}
+
+.service-container {
+  cursor: pointer;
+  &:hover {
+    .service-blurb-container {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .service-img-container {
+      img {
+        transform: translateY(0);
+      }
+    }
+  }
+  -webkit-transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+  transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+}
+
+.service-blurb-container {
+  opacity: 0;
+  transform: translateX(100%);
+  -webkit-transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+  transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+}
+
+.service-img-container {
+  overflow: hidden;
+  position: relative;
+  img {
+    transform: translateY(105%);
+    -webkit-transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+    transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+  }
+  -webkit-transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
+  transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
 }
 
 .services-cta {
