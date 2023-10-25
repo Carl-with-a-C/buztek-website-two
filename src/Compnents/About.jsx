@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
+import ArrowRW from "../Multimedia/Vectors/arrowR Large W.svg";
 
-const About = () => {
+const About = ({ theme }) => {
   const isTouchDevice = () => {
     return (
       "ontouchstart" in window ||
@@ -101,7 +102,7 @@ const About = () => {
       >
         <div className="arrow-container">
           <motion.img
-            src={ArrowR}
+            src={theme === "dark" ? ArrowRW : ArrowR}
             alt="An arrow pointing to the right"
             variants={arrow}
             initial="hidden"

@@ -7,16 +7,23 @@ import Contact from "./Compnents/Contact";
 import Footer from "./Compnents/Footer";
 import SmoothScroll from "./Helpers/SmoothScroll.jsx";
 
+import useLocalStorage from "use-local-storage";
+
 import "./sass/main.scss";
 
 function App() {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
   return (
-    <div className="App">
-      <Nav />
+    <div className="App" data-theme={theme}>
+      <Nav theme={theme} setTheme={setTheme} />
       <SmoothScroll>
         <Hero />
-        <About />
-        <Projects />
+        <About theme={theme} />
+        <Projects theme={theme} />
         <Services />
         <Contact />
         <Footer />

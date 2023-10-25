@@ -3,8 +3,8 @@
   position: sticky;
   top: 0;
   z-index: 11;
-  color: $white;
-  background-color: $black;
+  color: white;
+  background-color: black;
   transition: 0.3s;
   display: block;
   mix-blend-mode: difference;
@@ -82,7 +82,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $black;
   -webkit-transition: 0.6s;
   transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
   &:hover {
@@ -93,11 +92,11 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 21px;
-  width: 21px;
+  height: calc(var(--spacing-32) - 3px);
+  width: calc(var(--spacing-32) - 3px);
   right: 2px;
   bottom: 2px;
-  background-color: $white;
+  background-color: var(--text-primary);
   -webkit-transition: 0.6s;
   transition: 0.6s cubic-bezier(0.78, 0.01, 0.21, 1);
   border-radius: 50%;
@@ -112,7 +111,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  background-color: $black;
+  background-color: var(--text-primary);
   -webkit-transform: translateX(-24px);
   -ms-transform: translateX(-24px);
   transform: translateX(-24px);
@@ -122,7 +121,7 @@ input:checked + .slider:before {
   button {
     background: none;
     border: none;
-    color: $white;
+    color: var(--background);
     padding: 0;
   }
   display: none;

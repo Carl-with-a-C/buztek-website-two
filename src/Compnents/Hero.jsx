@@ -44,10 +44,10 @@ const Hero = () => {
   };
 
   const letter = {
-    hidden: { rotateX: "-90deg", color: "rgba(0, 200, 200, 1)" },
+    hidden: { rotateX: "-90deg", color: "var(--secondary)" },
     show: {
       rotateX: "0deg",
-      color: "rgba(0, 0, 0, 1)",
+      color: "var(--text-primary)",
       transition: {
         type: "spring",
         bounce: 0,
