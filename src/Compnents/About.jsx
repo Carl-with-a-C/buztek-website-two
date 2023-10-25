@@ -8,7 +8,8 @@ const About = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.15,
+        duration: 0.5,
         ease: [0.78, 0.01, 0.21, 1],
         when: "beforeChildren",
       },
@@ -35,9 +36,8 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0,
-        duration: 0.75,
+        duration: 1,
         ease: [0.78, 0.01, 0.21, 1],
-        stagger: 0.15,
       },
     },
   };
@@ -48,8 +48,8 @@ const About = () => {
       opacity: 1,
       y: "0px",
       transition: {
-        delay: 0.1,
-        duration: 0.75,
+        delay: 0.5,
+        duration: 1,
         ease: [0.78, 0.01, 0.21, 1],
         when: "beforeChildren",
       },
@@ -64,7 +64,8 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0,
-        duration: 1.5,
+        delay: 0.5,
+        duration: 2,
         ease: [0.78, 0.01, 0.21, 1],
       },
     },
