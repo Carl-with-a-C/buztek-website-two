@@ -1,6 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const isTouchDevice = () => {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+
   const { scrollYProgress } = useScroll();
 
   const scaleYB = useTransform(scrollYProgress, [0.0, 0.5], ["0%", "-400%"]);
@@ -54,7 +62,7 @@ const Hero = () => {
     show: {
       opacity: 1,
       transition: {
-        delay: 1.55,
+        delay: 1.75,
         staggerChildren: 0.1,
         ease: [0.78, 0.01, 0.21, 1],
         when: "beforeChildren",
@@ -109,7 +117,7 @@ const Hero = () => {
         <motion.div
           className="hero-splash-container"
           animate={{
-            y: ["96px", "0px"],
+            y: ["20vh", "0vh"],
           }}
           transition={{
             delay: 1.5,
@@ -123,22 +131,40 @@ const Hero = () => {
             initial="hidden"
             animate="show"
           >
-            <motion.span variants={letter} style={{ y: scaleYB }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYB }}
+            >
               B
             </motion.span>
-            <motion.span variants={letter} style={{ y: scaleYU }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYU }}
+            >
               U
             </motion.span>
-            <motion.span variants={letter} style={{ y: scaleYZ }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYZ }}
+            >
               Z
             </motion.span>
-            <motion.span variants={letter} style={{ y: scaleYT }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYT }}
+            >
               T
             </motion.span>
-            <motion.span variants={letter} style={{ y: scaleYE }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYE }}
+            >
               E
             </motion.span>
-            <motion.span variants={letter} style={{ y: scaleYK }}>
+            <motion.span
+              variants={letter}
+              style={isTouchDevice() ? { y: 0 } : { y: scaleYK }}
+            >
               K
             </motion.span>
           </motion.div>
@@ -147,7 +173,11 @@ const Hero = () => {
       <motion.div className="hero-blurb-video-container">
         <motion.div
           className="hero-blurb-container"
-          style={{ y: scaleYblurb, opacity: scaleYopacity }}
+          style={
+            isTouchDevice()
+              ? { y: 0 }
+              : { y: scaleYblurb, opacity: scaleYopacity }
+          }
         >
           <motion.div
             className="hero-blurb-title-container"
@@ -156,7 +186,7 @@ const Hero = () => {
             animate="show"
           >
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing </h3>{" "}
+              <h3>Lorem ipsum dolor sit </h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}
@@ -164,14 +194,14 @@ const Hero = () => {
             </motion.div>
 
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3>elit, sed do eiusmod tempor incididunt ut labore et </h3>{" "}
+              <h3> amet, consectetur adipiscing </h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3>dolore magna aliqua. Aenean vel elit </h3>{" "}
+              <h3>elit, sed do eiusmod tempor</h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}
@@ -203,9 +233,13 @@ const Hero = () => {
             loop
             muted
             layout
-            style={{
-              width: scaleYvideoY,
-            }}
+            style={
+              isTouchDevice()
+                ? {
+                    width: "100% ",
+                  }
+                : { width: scaleYvideoY }
+            }
           ></motion.iframe>
         </motion.div>
       </motion.div>
