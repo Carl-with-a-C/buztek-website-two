@@ -3,6 +3,26 @@ import { motion } from "framer-motion";
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
 
 const About = () => {
+  const isTouchDevice = () => {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+
+  const aboutTouchHide = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: 5,
+        duration: 0.5,
+        ease: [0.78, 0.01, 0.21, 1],
+      },
+    },
+  };
+
   const aboutHeadingParent = {
     hidden: { opacity: 0 },
     show: {
@@ -73,7 +93,12 @@ const About = () => {
 
   return (
     <section className="about-section-container container">
-      <div className="about-container">
+      <motion.div
+        className="about-container"
+        initial={isTouchDevice() ? "hidden" : false}
+        animate={isTouchDevice() ? "show" : false}
+        variants={aboutTouchHide}
+      >
         <div className="arrow-container">
           <motion.img
             src={ArrowR}
@@ -148,7 +173,7 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

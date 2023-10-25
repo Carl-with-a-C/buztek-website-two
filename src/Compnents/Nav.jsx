@@ -46,6 +46,11 @@ const Nav = () => {
             <span className="slider round"></span>
           </label>
         </div>
+        <div className="menu-btn-container">
+          <button>
+            <h4>menu</h4>
+          </button>
+        </div>
       </motion.nav>
     </header>
   );

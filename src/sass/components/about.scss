@@ -5,6 +5,9 @@
 
 .arrow-container {
   padding: 20px 20vw 0 0;
+  @media (max-width: $layout-breakpoint-tablet) {
+    display: none;
+  }
 
   img {
     width: var(--spacing-64);
@@ -40,6 +43,14 @@
   display: flex;
   gap: var(--spacing-256);
   padding-right: var(--spacing-256);
+  @media (max-width: $layout-breakpoint-desktop) {
+    gap: var(--spacing-128);
+    padding-right: var(--spacing-128);
+  }
+  @media (max-width: $layout-breakpoint-tablet) {
+    flex-direction: column;
+    padding-right: 0;
+  }
 }
 
 .about-blurb-content-container {
