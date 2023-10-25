@@ -23,10 +23,7 @@ const Services = () => {
           <h4>{`(Services)`}</h4>
         </div>
         <div className="services-blurb">
-          <h4>
-            LORUM Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit
-          </h4>
+          <h4>LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
         </div>
         <div className="services-cta">
           <h4>Learn more about us</h4>
@@ -35,6 +32,8 @@ const Services = () => {
       </div>
       <div className="services-main-container">
         <div className="service-container service-one">
+          <h2>DESIGN</h2>
+
           <div className="service-img-container">
             <img src={DesignImg} alt="colourful pencils" />
           </div>
@@ -48,13 +47,13 @@ const Services = () => {
           </motion.h1>
           <div className="service-blurb-container">
             <h4>
-              Our design process will help to
-              <br /> identify your brand story and express it <br />
-              in a compelling way
+              Our design process will help to identify your brand story and
+              express it in a compelling way
             </h4>
           </div>
         </div>
         <div className="service-container service-two">
+          <h2>BUILD</h2>
           <div className="service-img-container">
             <img src={BuildImg} alt="computer code on a screen" />
           </div>
@@ -68,13 +67,14 @@ const Services = () => {
           </motion.h1>
           <div className="service-blurb-container">
             <h4>
-              LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-              elit, sit amet, consectetur <br />
-              adipiscing elit
+              LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit
+              amet, consectetur adipiscing elit
             </h4>
           </div>
         </div>
         <div className="service-container service-three">
+          <h2>SECURE</h2>
+
           <div className="service-img-container">
             <img src={SecureImg} alt="a lock and chain on a door" />
           </div>
@@ -88,11 +88,14 @@ const Services = () => {
           </motion.h1>
           <div className="service-blurb-container">
             <h4>
-              LORUM Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-              elit, sit amet, consectetur <br />
-              adipiscing elit
+              LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit
+              amet, consectetur adipiscing elit
             </h4>
           </div>
+        </div>
+        <div className="services-cta mobile-cta">
+          <h4>Learn more about us</h4>
+          <div className="services-cta-line"></div>
         </div>
       </div>
     </section>

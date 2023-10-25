@@ -116,21 +116,21 @@ const About = () => {
             whileInView="show"
           >
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2>Lorem ipsum dolor sit am,</h2>
+              <h2>Lorem ipsum dolor</h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2>consectetur adipiscing</h2>
+              <h2> sit am, consectetur</h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2>elit lendus</h2>
+              <h2>adipiscing</h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}

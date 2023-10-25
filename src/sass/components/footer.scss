@@ -36,10 +36,19 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  @media (max-width: $layout-breakpoint-mobile) {
+    flex-direction: column;
+    gap: var(--spacing-16);
+  }
 }
 
 .footer-logo {
   font-size: var(--spacing-256);
   font-family: "Lexend", sans-serif;
   letter-spacing: -12px;
+
+  @media (max-width: $layout-breakpoint-tablet) {
+    font-size: var(--spacing-128);
+    letter-spacing: -6px;
+  }
 }

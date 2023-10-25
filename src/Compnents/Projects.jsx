@@ -68,6 +68,7 @@ const Projects = () => {
             alt="mockup of website design for a restaurant business"
           />
           <h4>Project One Title</h4>
+          <h4>{`(Hakkapo)`}</h4>
         </div>
         <div className="projects-img-container img-two">
           <img
@@ -75,6 +76,7 @@ const Projects = () => {
             alt="mockup of website design for a clothing business"
           />
           <h4>Project Two Title</h4>
+          <h4>{`(Snowflakes Clothing Co)`}</h4>
         </div>
       </div>
       <div className="projects-cta-section">

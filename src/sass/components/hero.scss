@@ -16,6 +16,7 @@
     font-size: calc(var(--spacing-256) * 1.75);
     @media (max-width: $layout-breakpoint-tablet) {
       font-size: var(--spacing-256);
+      margin-left: -5px;
     }
   }
 }
@@ -44,9 +45,6 @@
   }
 }
 
-.hero-video-container {
-}
-
 .hero-video {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -61,6 +59,9 @@
 .blurb-line-container {
   overflow: hidden;
   padding: 4px;
+  @media (max-width: $layout-breakpoint-desktop) {
+    padding: 0;
+  }
 }
 
 .blurb-cover {
