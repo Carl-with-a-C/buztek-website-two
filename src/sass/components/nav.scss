@@ -123,14 +123,13 @@ input:checked + .slider:before {
     background: none;
     border: none;
     color: $white;
+    padding: 0;
   }
   display: none;
   @media (max-width: $layout-breakpoint-tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--spacing-128);
-    height: var(--spacing-128);
     cursor: pointer;
   }
 }

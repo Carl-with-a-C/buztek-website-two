@@ -8,6 +8,11 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-128) 0;
+  @media (max-width: $layout-breakpoint-mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-16);
+  }
 }
 
 .contact-email-container {
