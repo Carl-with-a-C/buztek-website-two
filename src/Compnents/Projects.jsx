@@ -10,7 +10,7 @@ const Projects = () => {
     show: {
       opacity: 1,
       transition: {
-        delay: 1.55,
+        delay: 2,
         staggerChildren: 0.1,
         ease: [0.78, 0.01, 0.21, 1],
       },
@@ -24,7 +24,7 @@ const Projects = () => {
       transition: {
         type: "spring",
         bounce: 0,
-        duration: 1.5,
+        duration: 1.25,
         ease: [0.78, 0.01, 0.21, 1],
       },
     },
