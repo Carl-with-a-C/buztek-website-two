@@ -14,7 +14,7 @@
     padding-bottom: var(--spacing-16);
     a {
       text-decoration: none;
-      color: $black;
+      color: var(--text-primary);
       opacity: 0.4;
       -webkit-transition: 0.4s cubic-bezier(0.78, 0.01, 0.21, 1);
       transition: 0.4s cubic-bezier(0.78, 0.01, 0.21, 1);
@@ -62,6 +62,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  color: var(--text-primary);
 }
 
 .footer-scroll-btn {

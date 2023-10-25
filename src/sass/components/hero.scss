@@ -71,9 +71,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: $white;
+  background-color: var(--background);
   // @media (prefers-color-scheme: dark) {
-  //   background-color: $black;
+  //   background-color: var(--text-;
   // }
 }
 .hero-cta-line {
@@ -82,7 +82,7 @@
   transition: all 0.5s;
   right: 0;
   border-bottom: 2px solid;
-  background-color: $black;
+  background-color: var(--text-primary);
   width: 100%;
 }
 

@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import ProjectOne from "../Multimedia/Images/Hakkapo-website-box.jpg";
 import ProjectTwo from "../Multimedia/Images/Snowflakes-website-box.jpg";
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
+import ArrowRW from "../Multimedia/Vectors/arrowR Large W.svg";
 
-const Projects = () => {
+const Projects = ({ theme }) => {
   const worksContainer = {
     hidden: { opacity: 1 },
     show: {
@@ -81,7 +82,10 @@ const Projects = () => {
       </div>
       <div className="projects-cta-section">
         <div className="projects-cta-content">
-          <img src={ArrowR} alt="arrow pointing right" />
+          <img
+            src={theme === "dark" ? ArrowRW : ArrowR}
+            alt="arrow pointing right"
+          />
           <h2>See all projects</h2>
         </div>
         <div className="projects-cta-line"></div>

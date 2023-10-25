@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 
-const Nav = () => {
+const Nav = ({ theme, setTheme }) => {
   const date = new Date();
   const showTime = date.getHours() + ":" + date.getMinutes();
   const showAmPm = date.getHours() >= 12 ? "pm" : "am";
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
+  console.log(theme);
 
   return (
     <header className="header">
@@ -42,7 +49,7 @@ const Nav = () => {
         </div>
         <div className="lightmode-switch-container">
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" onClick={switchTheme} />
             <span className="slider round"></span>
           </label>
         </div>
