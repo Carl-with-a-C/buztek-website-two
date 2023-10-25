@@ -1,6 +1,15 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour 
+         in place of 'smooth' */
+    });
+  };
+
   return (
     <footer className="footer-container container">
       <div className="footer-links-container">
@@ -60,8 +69,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom-container">
+        <button className="footer-scroll-btn-mob" onClick={scrollToTop}>
+          <h4>back to top</h4>
+        </button>
         <div className="footer-logo">Buztek</div>
-        <h4>back to top</h4>
+        <button className="footer-scroll-btn" onClick={scrollToTop}>
+          <h4>back to top</h4>
+        </button>
         <h4>Copyright @ Buztek 2023</h4>
       </div>
     </footer>
