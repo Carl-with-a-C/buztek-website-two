@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 
 const Nav = ({ theme, setTheme }) => {
   const date = new Date();
-  const showTime = date.getHours() + ":" + date.getMinutes();
+  const twentyFourHours =
+    date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+  const twentyFourMinutes =
+    date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
+  const showTime = twentyFourHours + ":" + twentyFourMinutes;
   const showAmPm = date.getHours() >= 12 ? "pm" : "am";
 
   const [isOn, setIsOn] = useState(false);

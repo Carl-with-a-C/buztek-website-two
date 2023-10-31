@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import DesignImg from "../Multimedia/Images/design-colors.webp";
@@ -5,16 +6,9 @@ import BuildImg from "../Multimedia/Images/build-colors.jpg";
 import SecureImg from "../Multimedia/Images/secure-colors.jpeg";
 
 const Services = () => {
-  const serviceLetter = {
-    hidden: { opacity: 0.25 },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.78, 0.01, 0.21, 1],
-      },
-    },
-  };
+  const [serviceOne, setServiceOne] = useState(true);
+  const [serviceTwo, setServiceTwo] = useState(false);
+  const [serviceThree, setServiceThree] = useState(false);
 
   return (
     <section className="services-section-container container">
@@ -31,40 +25,44 @@ const Services = () => {
         </div>
       </div>
       <div className="services-main-container">
-        <div className="service-container service-one">
-          <h2>DESIGN</h2>
+        <motion.div
+          className="service-container service-one"
+          data-serviceOne={serviceOne}
+          layout
+          onMouseEnter={() => {
+            setServiceThree(false);
+            setServiceTwo(false);
+            setServiceOne(true);
+          }}
+        >
+          <h1 className="service-title-mob">DESIGN</h1>
 
           <div className="service-img-container">
             <img src={DesignImg} alt="colourful pencils" />
           </div>
-          <motion.h1
-            variants={serviceLetter}
-            initial="hidden"
-            whileHover="show"
-            whileFocus="show"
-          >
-            DESIGN
-          </motion.h1>
+          <h1>DESIGN</h1>
           <div className="service-blurb-container">
             <h4>
               Our design process will help to identify your brand story and
               express it in a compelling way
             </h4>
           </div>
-        </div>
-        <div className="service-container service-two">
-          <h2>BUILD</h2>
+        </motion.div>
+        <div
+          className="service-container service-two"
+          data-serviceTwo={serviceTwo}
+          layout
+          onMouseEnter={() => {
+            setServiceThree(false);
+            setServiceTwo(true);
+            setServiceOne(false);
+          }}
+        >
+          <h1 className="service-title-mob">BUILD</h1>
           <div className="service-img-container">
             <img src={BuildImg} alt="computer code on a screen" />
           </div>
-          <motion.h1
-            variants={serviceLetter}
-            initial="hidden"
-            whileHover="show"
-            whileFocus="show"
-          >
-            BUILD
-          </motion.h1>
+          <h1>BUILD</h1>
           <div className="service-blurb-container">
             <h4>
               LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit
@@ -72,20 +70,22 @@ const Services = () => {
             </h4>
           </div>
         </div>
-        <div className="service-container service-three">
-          <h2>SECURE</h2>
+        <div
+          className="service-container service-three"
+          data-serviceThree={serviceThree}
+          layout
+          onMouseEnter={() => {
+            setServiceThree(true);
+            setServiceTwo(false);
+            setServiceOne(false);
+          }}
+        >
+          <h1 className="service-title-mob">SECURE</h1>
 
           <div className="service-img-container">
             <img src={SecureImg} alt="a lock and chain on a door" />
           </div>
-          <motion.h1
-            variants={serviceLetter}
-            initial="hidden"
-            whileHover="show"
-            whileFocus="show"
-          >
-            SECURE
-          </motion.h1>
+          <h1>SECURE</h1>
           <div className="service-blurb-container">
             <h4>
               LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit

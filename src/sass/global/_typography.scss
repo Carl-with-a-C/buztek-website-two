@@ -48,7 +48,7 @@ p {
     font-size: var(--fs-72);
     font-family: var(--ff-para);
     line-height: 105%;
-    letter-spacing: 102%;
+    letter-spacing: 95%;
     font-weight: 400;
   }
 
@@ -57,6 +57,7 @@ p {
     font-family: var(--ff-para);
     line-height: 1;
     font-weight: 400;
+    letter-spacing: -1px;
   }
 
   h4 {

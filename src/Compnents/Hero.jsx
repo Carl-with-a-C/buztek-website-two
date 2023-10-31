@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import SplashVid from "../Multimedia/Videos/SplashVid.mp4";
+
 const Hero = () => {
   const isTouchDevice = () => {
     return (
@@ -130,6 +132,7 @@ const Hero = () => {
             variants={container}
             initial="hidden"
             animate="show"
+            layout
           >
             <motion.span
               variants={letter}
@@ -227,7 +230,7 @@ const Hero = () => {
         >
           <motion.iframe
             className="hero-video"
-            src="https://player.vimeo.com/video/370467553"
+            src={SplashVid}
             title="Buztek Showreel 2023"
             autoPlay
             loop
