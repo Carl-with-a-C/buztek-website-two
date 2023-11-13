@@ -19,27 +19,27 @@ const Footer = () => {
           </div>
           <ul>
             <li>
-              <a href="#">
+              <a href="#home">
                 <h4>Home</h4>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#about">
                 <h4>About</h4>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#services">
                 <h4>Services</h4>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#projects">
                 <h4>Projects</h4>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#contact">
                 <h4>Contact</h4>
               </a>
             </li>
@@ -72,7 +72,9 @@ const Footer = () => {
         <button className="footer-scroll-btn-mob" onClick={scrollToTop}>
           <h4>back to top</h4>
         </button>
-        <div className="footer-logo">Buztek</div>
+        <div className="footer-logo">
+          <a href="#home">Buztek</a>
+        </div>
         <button className="footer-scroll-btn" onClick={scrollToTop}>
           <h4>back to top</h4>
         </button>

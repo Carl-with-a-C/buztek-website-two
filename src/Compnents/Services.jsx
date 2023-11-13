@@ -11,13 +11,13 @@ const Services = () => {
   const [serviceThree, setServiceThree] = useState(false);
 
   return (
-    <section className="services-section-container container">
+    <section className="services-section-container container" id="services">
       <div className="services-header-container">
         <div className="services-heading">
           <h4>{`(Services)`}</h4>
         </div>
         <div className="services-blurb">
-          <h4>LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+          <h4>Transforming your online presence</h4>
         </div>
         <div className="services-cta">
           <h4>Learn more about us</h4>
@@ -43,8 +43,9 @@ const Services = () => {
           <h1>DESIGN</h1>
           <div className="service-blurb-container">
             <h4>
-              Our design process will help to identify your brand story and
-              express it in a compelling way
+              Our web design services go beyond aesthetics. Our design process
+              will help to identify your brand story and express it in a
+              compelling way
             </h4>
           </div>
         </motion.div>
@@ -65,8 +66,9 @@ const Services = () => {
           <h1>BUILD</h1>
           <div className="service-blurb-container">
             <h4>
-              LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit
-              amet, consectetur adipiscing elit
+              We create websites that are not only visually stunning but also
+              functional, intuitive, and tailored to meet the unique needs of
+              your business.
             </h4>
           </div>
         </div>
@@ -88,8 +90,9 @@ const Services = () => {
           <h1>SECURE</h1>
           <div className="service-blurb-container">
             <h4>
-              LORUM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sit
-              amet, consectetur adipiscing elit
+              Our security build services guarantee that your website is
+              fortified against cyber threats, providing a secure environment
+              for your business and your users.
             </h4>
           </div>
         </div>

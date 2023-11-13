@@ -119,7 +119,7 @@ const Hero = () => {
         <motion.div
           className="hero-splash-container"
           animate={{
-            y: ["20vh", "0vh"],
+            y: ["15vh", "0vh"],
           }}
           transition={{
             delay: 1.5,
@@ -189,7 +189,7 @@ const Hero = () => {
             animate="show"
           >
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3>Lorem ipsum dolor sit </h3>{" "}
+              <h3>Manchester based </h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}
@@ -197,14 +197,14 @@ const Hero = () => {
             </motion.div>
 
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3> amet, consectetur adipiscing </h3>{" "}
+              <h3>architects of elevated </h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="blurb-line-container" variants={blurbReveal}>
-              <h3>elit, sed do eiusmod tempor</h3>{" "}
+              <h3>web experiences</h3>{" "}
               <motion.div
                 className="blurb-cover"
                 variants={blurbCoverReveal}

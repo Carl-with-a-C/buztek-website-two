@@ -18,16 +18,16 @@ function App() {
     defaultDark ? "dark" : "light"
   );
   return (
-    <div className="App" data-theme={theme}>
+    <div className="App" data-theme={theme} id="home">
       <Nav theme={theme} setTheme={setTheme} />
-      <SmoothScroll>
-        <Hero />
-        <About theme={theme} />
-        <Projects theme={theme} />
-        <Services />
-        <Contact />
-        <Footer />
-      </SmoothScroll>
+      {/* <SmoothScroll> */}
+      <Hero />
+      <About theme={theme} />
+      <Projects theme={theme} />
+      <Services />
+      <Contact />
+      <Footer />
+      {/* </SmoothScroll> */}
     </div>
   );
 }

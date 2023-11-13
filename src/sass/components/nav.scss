@@ -27,6 +27,10 @@
 
 .logo-container {
   margin-right: var(--spacing-128);
+  a {
+    text-decoration: none;
+    color: white;
+  }
   span {
     font-family: "Lexend", sans-serif;
     font-size: var(--spacing-32);
@@ -49,6 +53,10 @@
 .nav-links {
   display: flex;
   gap: 4px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .lightmode-switch-container {

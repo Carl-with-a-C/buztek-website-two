@@ -50,6 +50,10 @@
   font-size: var(--spacing-256);
   font-family: "Lexend", sans-serif;
   letter-spacing: -12px;
+  a {
+    text-decoration: none;
+    color: var(--text-primary);
+  }
 
   @media (max-width: $layout-breakpoint-tablet) {
     font-size: var(--spacing-128);

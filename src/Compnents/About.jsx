@@ -93,7 +93,7 @@ const About = ({ theme }) => {
   };
 
   return (
-    <section className="about-section-container container">
+    <section className="about-section-container container" id="about">
       <motion.div
         className="about-container"
         initial={isTouchDevice() ? "hidden" : false}
@@ -117,21 +117,21 @@ const About = ({ theme }) => {
             whileInView="show"
           >
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2>Lorem ipsum dolor</h2>
+              <h2>We are not just </h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2> sit am, consectetur</h2>
+              <h2>a web design</h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}
               ></motion.div>
             </motion.div>
             <motion.div className="about-heading-line" variants={aboutReveal}>
-              <h2>adipiscing</h2>
+              <h2>company</h2>
               <motion.div
                 className="about-heading-cover"
                 variants={aboutCoverReveal}
@@ -153,18 +153,19 @@ const About = ({ theme }) => {
               </div>
               <div className="about-blurb-para para-one">
                 <h4>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Aenean vel elit, Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor incididunt dolore magna
-                  aliqua. Aenean vel elit
+                  At Buztek, we are not just a web design company; we are
+                  architects of digital innovation, passionate about creating
+                  online experiences that transcend expectations. Based in the
+                  heart of Manchester, our team brings together a dynamic blend
+                  of creativity, technical expertise, and a deep understanding
+                  of the ever-evolving digital landscape.
                 </h4>{" "}
               </div>
               <div className="about-blurb-para para-two">
                 <h4>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Aenean vel elit
+                  Our mission is to empower businesses with cutting-edge web
+                  solutions that not only captivate audiences but also drive
+                  tangible results.
                 </h4>
               </div>
               <div className="about-blurb-cta">

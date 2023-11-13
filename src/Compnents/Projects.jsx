@@ -31,7 +31,7 @@ const Projects = ({ theme }) => {
     },
   };
   return (
-    <section className="projects-section-container container">
+    <section className="projects-section-container container" id="projects">
       <div className="projects-header-section">
         <motion.div
           className="projects-title-container"

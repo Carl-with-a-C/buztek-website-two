@@ -75,7 +75,9 @@ const Nav = ({ theme, setTheme }) => {
         transition={{ delay: 1.75, duration: 1 }}
       >
         <div className="logo-container">
-          <span>Buztek</span>
+          <a href="#home">
+            <span>Buztek</span>
+          </a>
         </div>
         <div className="nav-central-container">
           <div className="date-time-container">
@@ -87,16 +89,24 @@ const Nav = ({ theme, setTheme }) => {
           <div className="nav-links-container">
             <ul className="nav-links">
               <li className="nav-link">
-                <h4>Projects,</h4>
+                <a href="#projects">
+                  <h4>Projects,</h4>
+                </a>
               </li>
               <li className="nav-link">
-                <h4>Services,</h4>
+                <a href="#services">
+                  <h4>Services,</h4>
+                </a>
               </li>
               <li className="nav-link">
-                <h4>About,</h4>
+                <a href="#about">
+                  <h4>About,</h4>
+                </a>
               </li>
               <li className="nav-link">
-                <h4>Contact</h4>
+                <a href="#contact">
+                  <h4>Contact</h4>
+                </a>
               </li>
             </ul>
           </div>
@@ -138,7 +148,9 @@ const Nav = ({ theme, setTheme }) => {
                 layout
               >
                 <motion.li variants={links}>
-                  <motion.h1>Home</motion.h1>
+                  <a href="#home">
+                    <motion.h1>Home</motion.h1>
+                  </a>
                   <motion.div
                     className="links-cover"
                     variants={linksCover}
@@ -147,7 +159,9 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <motion.h1>About</motion.h1>
+                  <a href="#about">
+                    <motion.h1>About</motion.h1>
+                  </a>
                   <motion.div
                     className="links-cover"
                     variants={linksCover}
@@ -156,7 +170,9 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <motion.h1>Projects</motion.h1>
+                  <a href="#projects">
+                    <motion.h1>Projects</motion.h1>
+                  </a>
                   <motion.div
                     className="links-cover"
                     variants={linksCover}
@@ -165,7 +181,9 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <motion.h1>Services</motion.h1>
+                  <a href="#services">
+                    <motion.h1>Services</motion.h1>
+                  </a>
                   <motion.div
                     className="links-cover"
                     variants={linksCover}
@@ -175,7 +193,9 @@ const Nav = ({ theme, setTheme }) => {
                 </motion.li>
 
                 <motion.li variants={links}>
-                  <motion.h1>Contact</motion.h1>
+                  <a href="#contact">
+                    <motion.h1>Contact</motion.h1>
+                  </a>
                   <motion.div
                     className="links-cover"
                     variants={linksCover}
