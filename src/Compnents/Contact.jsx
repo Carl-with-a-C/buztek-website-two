@@ -7,9 +7,12 @@ const Contact = () => {
         <div className="contact-title-container">
           <h2>Work with us</h2>
         </div>
-        <div className="contact-email-container">
-          <h2>buztek@post.com</h2>
-          <div className="contact-cta-line"></div>
+        <div className="contact-e-t-container">
+          <h2>0749 101 0694 </h2>
+          <div className="contact-email-container">
+            <h2 href="mailto:info@buztek.co">info@buztek.co</h2>
+            <div className="contact-cta-line"></div>
+          </div>
         </div>
       </div>
     </section>

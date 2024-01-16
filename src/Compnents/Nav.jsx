@@ -125,7 +125,7 @@ const Nav = ({ theme, setTheme }) => {
             <div className="menu-btn-text-container" data-menuOpen={menuOpen}>
               <motion.div
                 className="menu-btn-text"
-                style={menuOpen ? { height: "0%" } : { height: "100%" }}
+                style={menuOpen ? { y: "-50%" } : { y: "0%" }}
                 layout
               >
                 <h4>menu</h4>
@@ -136,7 +136,11 @@ const Nav = ({ theme, setTheme }) => {
         </div>
         <motion.div
           className="drop-down-menu-container container"
-          style={menuOpen ? { y: "0%" } : { y: "-100%" }}
+          style={
+            menuOpen
+              ? { y: "0%", transition: { duration: 1, delay: 0.25 } }
+              : { y: "-100%" }
+          }
         >
           <div className="dropdown-menu-links-container">
             <div className="sitemap-links-container">
@@ -148,7 +152,12 @@ const Nav = ({ theme, setTheme }) => {
                 layout
               >
                 <motion.li variants={links}>
-                  <a href="#home">
+                  <a
+                    href="#home"
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
+                  >
                     <motion.h1>Home</motion.h1>
                   </a>
                   <motion.div
@@ -159,7 +168,12 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <a href="#about">
+                  <a
+                    href="#about"
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
+                  >
                     <motion.h1>About</motion.h1>
                   </a>
                   <motion.div
@@ -170,7 +184,12 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <a href="#projects">
+                  <a
+                    href="#projects"
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
+                  >
                     <motion.h1>Projects</motion.h1>
                   </a>
                   <motion.div
@@ -181,7 +200,12 @@ const Nav = ({ theme, setTheme }) => {
                   ></motion.div>
                 </motion.li>
                 <motion.li variants={links}>
-                  <a href="#services">
+                  <a
+                    href="#services"
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
+                  >
                     <motion.h1>Services</motion.h1>
                   </a>
                   <motion.div
@@ -193,7 +217,12 @@ const Nav = ({ theme, setTheme }) => {
                 </motion.li>
 
                 <motion.li variants={links}>
-                  <a href="#contact">
+                  <a
+                    href="#contact"
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
+                  >
                     <motion.h1>Contact</motion.h1>
                   </a>
                   <motion.div

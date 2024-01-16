@@ -228,12 +228,12 @@ const Hero = () => {
           initial="hidden"
           animate="show"
         >
-          <motion.iframe
+          <motion.video
             className="hero-video"
             src={SplashVid}
             title="Buztek Showreel 2023"
-            autoPlay
             loop
+            autoPlay={true}
             muted
             layout
             style={
@@ -243,7 +243,7 @@ const Hero = () => {
                   }
                 : { width: scaleYvideoY }
             }
-          ></motion.iframe>
+          ></motion.video>
         </motion.div>
       </motion.div>
     </section>

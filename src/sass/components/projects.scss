@@ -32,6 +32,23 @@
   }
 }
 
+.projects-img-stack {
+  display: grid;
+}
+
+.projects-img-stack > * {
+  grid-area: 1/1;
+}
+
+.projects-img-variation {
+  background-color: white;
+}
+
+.projects-video {
+  align-self: center;
+  justify-self: center;
+}
+
 .projects-cta-section {
   position: relative;
   display: inline-block;

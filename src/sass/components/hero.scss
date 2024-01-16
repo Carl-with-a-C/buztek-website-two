@@ -1,5 +1,6 @@
 .hero-section {
   width: 100%;
+  padding-top: var(--spacing-128);
 }
 
 .hero-splash-container {
@@ -33,7 +34,7 @@
     justify-content: flex-start;
     height: auto;
   }
-  iframe {
+  video {
     border-radius: var(--spacing-16);
     position: absolute;
     top: 0;
@@ -47,6 +48,7 @@
 .hero-video {
   aspect-ratio: 16 / 9;
   width: 100%;
+  background-color: black;
 }
 
 .hero-blurb-container {

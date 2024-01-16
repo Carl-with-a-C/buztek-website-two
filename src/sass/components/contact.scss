@@ -11,8 +11,13 @@
   @media (max-width: $layout-breakpoint-mobile) {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-16);
+    gap: var(--spacing-64);
   }
+}
+
+.contact-e-t-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-email-container {

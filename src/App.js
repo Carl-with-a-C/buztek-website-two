@@ -5,7 +5,6 @@ import Projects from "./Compnents/Projects";
 import Services from "./Compnents/Services";
 import Contact from "./Compnents/Contact";
 import Footer from "./Compnents/Footer";
-import SmoothScroll from "./Helpers/SmoothScroll.jsx";
 
 import useLocalStorage from "use-local-storage";
 
@@ -20,14 +19,12 @@ function App() {
   return (
     <div className="App" data-theme={theme} id="home">
       <Nav theme={theme} setTheme={setTheme} />
-      {/* <SmoothScroll> */}
       <Hero />
       <About theme={theme} />
       <Projects theme={theme} />
       <Services />
       <Contact />
       <Footer />
-      {/* </SmoothScroll> */}
     </div>
   );
 }

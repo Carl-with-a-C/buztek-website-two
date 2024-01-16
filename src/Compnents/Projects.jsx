@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import ProjectOne from "../Multimedia/Images/Hakkapo-website-box.jpg";
 import ProjectTwo from "../Multimedia/Images/Snowflakes-website-box.jpg";
+import HakkapoHover from "../Multimedia/Images/Hakkapo-website-variant.jpg";
+import SnowflakesHover from "../Multimedia/Images/Snowflakes-website-variant.jpg";
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
 import ArrowRW from "../Multimedia/Vectors/arrowR Large W.svg";
 
@@ -64,19 +66,50 @@ const Projects = ({ theme }) => {
       </div>
       <div className="projects-img-section">
         <div className="projects-img-container img-one">
-          <img
-            src={ProjectOne}
-            alt="mockup of website design for a restaurant business"
-          />
-          <h4>Project One Title</h4>
+          <div className="projects-img-stack">
+            <img
+              src={ProjectOne}
+              alt="mockup of website design for a restaurant business"
+            />
+            <a
+              href="https://www.snowflakesclothing.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.25 }}
+                src={HakkapoHover}
+                alt="mockup of website design for a restaurant business"
+              />
+            </a>
+          </div>
+
+          <h4>Japanese Restaurant</h4>
           <h4>{`(Hakkapo)`}</h4>
         </div>
         <div className="projects-img-container img-two">
-          <img
-            src={ProjectTwo}
-            alt="mockup of website design for a clothing business"
-          />
-          <h4>Project Two Title</h4>
+          <div className="projects-img-stack">
+            <img
+              src={ProjectTwo}
+              alt="mockup of website design for a restaurant business"
+            />
+            <a
+              href="https://www.snowflakesclothing.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.25 }}
+                src={SnowflakesHover}
+                alt="mockup of website design for a restaurant business"
+              />
+            </a>
+          </div>
+          <h4>Sustainable Clothing Company</h4>
           <h4>{`(Snowflakes Clothing Co)`}</h4>
         </div>
       </div>
