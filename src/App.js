@@ -1,12 +1,10 @@
-import Nav from "./Compnents/Nav";
-import Hero from "./Compnents/Hero";
-import About from "./Compnents/About";
-import Projects from "./Compnents/Projects";
-import Services from "./Compnents/Services";
-import Contact from "./Compnents/Contact";
-import Footer from "./Compnents/Footer";
+import Layout from "./Components/Layout.jsx";
+import Home from "./Pages/Home.jsx";
+import Pricing from "./Pages/Pricing.jsx";
 
 import useLocalStorage from "use-local-storage";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import "./sass/main.scss";
 
@@ -16,15 +14,23 @@ function App() {
     "theme",
     defaultDark ? "dark" : "light"
   );
+  const location = useLocation();
+
   return (
     <div className="App" data-theme={theme} id="home">
-      <Nav theme={theme} setTheme={setTheme} />
-      <Hero />
-      <About theme={theme} />
-      <Projects theme={theme} />
-      <Services />
-      <Contact />
-      <Footer />
+      {/* <Nav theme={theme} setTheme={setTheme} /> */}
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home theme={theme} setTheme={setTheme} />} />
+            <Route path="*" element={<Home theme={theme} />} />
+          </Route>
+          <Route
+            path="pricing"
+            element={<Pricing theme={theme} setTheme={setTheme} />}
+          />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
