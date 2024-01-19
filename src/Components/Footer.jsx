@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-socials-links">
+        {/* <div className="footer-socials-links">
           <div className="footer-socials-heading">
             <h4>Socials</h4>
           </div>
@@ -66,14 +66,14 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="footer-bottom-container">
         <button className="footer-scroll-btn-mob" onClick={scrollToTop}>
           <h4>back to top</h4>
         </button>
         <div className="footer-logo">
-          <a href="#home">Buztek</a>
+          <a href="/">Buztek</a>
         </div>
         <button className="footer-scroll-btn" onClick={scrollToTop}>
           <h4>back to top</h4>

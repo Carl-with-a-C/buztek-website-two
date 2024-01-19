@@ -8,6 +8,21 @@
 }
 
 .pricing-banner {
+  display: grid;
+  grid-template-areas: "top vid" "bottom bottom";
+}
+
+.banner-video-container {
+  display: inline-block;
+  position: relative;
+  grid-area: vid;
+  justify-self: start;
+  align-self: center;
+}
+
+.banner-video {
+  width: calc(var(--spacing-256) * 1.2);
+  border-radius: 8px;
 }
 
 .banner-blurb-para {
@@ -16,4 +31,12 @@
   h4 {
     opacity: 0.5;
   }
+}
+
+.banner-title-top {
+  grid-area: top;
+}
+
+.banner-title-bottom {
+  grid-area: bottom;
 }

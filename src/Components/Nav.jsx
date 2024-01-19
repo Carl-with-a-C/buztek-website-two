@@ -75,7 +75,7 @@ const Nav = ({ theme, setTheme }) => {
         transition={{ delay: 1.75, duration: 1 }}
       >
         <div className="logo-container">
-          <a href="#home">
+          <a href="/">
             <span>Buztek</span>
           </a>
         </div>

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import DesignImg from "../Multimedia/Images/design-colors.webp";
 import BuildImg from "../Multimedia/Images/build-colors.jpg";
-import SecureImg from "../Multimedia/Images/secure-colors.jpeg";
+import SecureImg from "../Multimedia/Images/secure-colors.jpg";
 
 const Services = () => {
   const [serviceOne, setServiceOne] = useState(true);
@@ -20,7 +21,9 @@ const Services = () => {
           <h4>Transforming your online presence</h4>
         </div>
         <div className="services-cta">
-          <h4>Learn more about us</h4>
+          <Link to="/pricing">
+            <h4>Let's work together</h4>
+          </Link>
           <div className="services-cta-line"></div>
         </div>
       </div>

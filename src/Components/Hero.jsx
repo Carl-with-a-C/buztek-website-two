@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import SplashVid from "../Multimedia/Videos/SplashVid.mp4";
 
@@ -218,7 +219,9 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
-            <h4>Learn more about us</h4>
+            <Link to="/pricing">
+              <h4>Let's work together</h4>
+            </Link>
             <div className="hero-cta-line"></div>
           </motion.div>
         </motion.div>

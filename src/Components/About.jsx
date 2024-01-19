@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
 import ArrowRW from "../Multimedia/Vectors/arrowR Large W.svg";
@@ -169,7 +170,9 @@ const About = ({ theme }) => {
                 </h4>
               </div>
               <div className="about-blurb-cta">
-                <h4>Learn more about us</h4>
+                <Link to="/pricing">
+                  <h4>Let's work together</h4>
+                </Link>
                 <div className="about-cta-line"></div>
               </div>
             </div>

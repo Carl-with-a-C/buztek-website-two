@@ -1,12 +1,21 @@
-import React from "react";
+import BannerVid from "../../Multimedia/Videos/BuztekBubbles.mp4";
 
 const Banner = () => {
   return (
     <section className="banner-section container">
       <div className="banner-container">
         <div className="pricing-banner">
-          <h1>Let's transform</h1>
-          <h1>your online presence</h1>
+          <h1 className="banner-title-top">Let's transform</h1>
+          <div className="banner-video-container">
+            <video
+              className="banner-video"
+              autoPlay
+              loop
+              muted
+              src={BannerVid}
+            ></video>
+          </div>
+          <h1 className="banner-title-bottom">your online presence</h1>
         </div>
       </div>
       <div className="banner-blurb-container">

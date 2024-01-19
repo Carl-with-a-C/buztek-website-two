@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import ProjectOne from "../Multimedia/Images/Hakkapo-website-box.jpg";
+import ProjectOne from "../Multimedia/Images/RJNW-website.jpg";
 import ProjectTwo from "../Multimedia/Images/Snowflakes-website-box.jpg";
-import HakkapoHover from "../Multimedia/Images/Hakkapo-website-variant.jpg";
+import RJNWHover from "../Multimedia/Images/RJNW-website-variant.png";
 import SnowflakesHover from "../Multimedia/Images/Snowflakes-website-variant.jpg";
 import ArrowR from "../Multimedia/Vectors/arrowR Large.svg";
 import ArrowRW from "../Multimedia/Vectors/arrowR Large W.svg";
@@ -72,7 +72,7 @@ const Projects = ({ theme }) => {
               alt="mockup of website design for a restaurant business"
             />
             <a
-              href="https://www.snowflakesclothing.com"
+              href="https://www.roofingandjoinery.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -80,14 +80,14 @@ const Projects = ({ theme }) => {
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.25 }}
-                src={HakkapoHover}
-                alt="mockup of website design for a restaurant business"
+                src={RJNWHover}
+                alt="mockup of website design for a roofing business"
               />
             </a>
           </div>
 
-          <h4>Japanese Restaurant</h4>
-          <h4>{`(Hakkapo)`}</h4>
+          <h4>Roofing Contractors</h4>
+          <h4>{`(Roofing & Joinery NW)`}</h4>
         </div>
         <div className="projects-img-container img-two">
           <div className="projects-img-stack">
