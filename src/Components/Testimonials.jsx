@@ -16,7 +16,7 @@ const Testimonials = ({ theme }) => {
         </div>
         <div className="testimonials-cta">
           <Link to="/pricing">
-            <h4>Let's work together</h4>
+            <h4>Let's work together YO</h4>
           </Link>
           <div className="testimonials-cta-line"></div>
         </div>
