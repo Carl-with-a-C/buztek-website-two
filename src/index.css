@@ -8,3 +8,11 @@
   --text-primary: white;
   --secondary: teal;
 }
+
+[data-menuopen="true"] {
+  --nav-menu-color: black;
+}
+
+[data-menuopen="false"] {
+  --nav-menu-color: white;
+}

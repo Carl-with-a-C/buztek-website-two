@@ -22,7 +22,10 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home theme={theme} setTheme={setTheme} />} />
-            <Route path="*" element={<Home theme={theme} />} />
+            <Route
+              path="*"
+              element={<Home theme={theme} setTheme={setTheme} />}
+            />
             <Route
               path="pricing"
               element={<Pricing theme={theme} setTheme={setTheme} />}

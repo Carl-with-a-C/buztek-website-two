@@ -1,17 +1,9 @@
-import NavPricing from "../Components/NavPricing";
-import Approach from "../Components/Pricing/Approach";
-import Banner from "../Components/Pricing/Banner";
-import PriceList from "../Components/Pricing/PriceList";
-
 import { motion } from "framer-motion";
 
-const Pricing = ({ theme, setTheme }) => {
-  return (
-    <div>
-      <NavPricing theme={theme} setTheme={setTheme} />
-      <Banner />
-      <Approach />
-      <PriceList />
+const transition = (OgComponent) => {
+  return () => (
+    <>
+      <OgComponent />
       <motion.div
         className="slide-in"
         initial={{ scaleY: 0 }}
@@ -26,8 +18,8 @@ const Pricing = ({ theme, setTheme }) => {
         exit={{ scaleY: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       />
-    </div>
+    </>
   );
 };
 
-export default Pricing;
+export default transition;

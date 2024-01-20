@@ -44,7 +44,9 @@ const Approach = () => {
                 <h4>02.</h4>
               </div>
               <div className="appraoch-list-blurb">
-                <h4 className="approach-list-item-heading">Holistic Apprach</h4>
+                <h4 className="approach-list-item-heading">
+                  Tailored Partnership
+                </h4>
                 <h4 className="approach-list-item-para">
                   We adapt to your needs with ease, enabling efficient
                   workflows, and providing high-touch, high-quality partnerships
@@ -57,7 +59,9 @@ const Approach = () => {
                 <h4>03.</h4>
               </div>
               <div className="appraoch-list-blurb">
-                <h4 className="approach-list-item-heading">Holistic Apprach</h4>
+                <h4 className="approach-list-item-heading">
+                  Seamless Experience
+                </h4>
                 <h4 className="approach-list-item-para">
                   We make the most of every partnership, turning complex
                   challenges into deeply integrated, highly collaborative

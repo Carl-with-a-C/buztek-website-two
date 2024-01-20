@@ -4,6 +4,9 @@
   gap: var(--spacing-128);
   margin-top: var(--spacing-256);
   margin-bottom: var(--spacing-256);
+  @media (max-width: $layout-breakpoint-tablet) {
+    gap: var(--spacing-32);
+  }
 }
 
 .approach-header-container {
@@ -11,15 +14,32 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: var(--spacing-64);
+  @media (max-width: $layout-breakpoint-tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-32);
+    margin-bottom: var(--spacing-32);
+    .approach-header-subtitle-container {
+      visibility: hidden;
+    }
+  }
 }
 
 .approach-video-list-container {
   display: flex;
   gap: var(--spacing-256);
+  @media (max-width: $layout-breakpoint-tablet) {
+    flex-direction: column;
+    gap: var(--spacing-128);
+  }
 }
+
 .approach-video-container {
   position: relative;
   width: calc(var(--spacing-256) * 6);
+  @media (max-width: $layout-breakpoint-tablet) {
+    width: 100%;
+  }
 }
 
 .approach-video {
@@ -40,6 +60,9 @@
 .approach-list-item {
   display: flex;
   gap: var(--spacing-128);
+  @media (max-width: $layout-breakpoint-desktop) {
+    gap: var(--spacing-64);
+  }
 }
 
 .appraoch-list-blurb {
@@ -47,6 +70,14 @@
   h4 {
     margin-bottom: var(--spacing-32);
     line-height: calc(var(--spacing-16) * 2);
+  }
+  @media (max-width: $layout-breakpoint-desktop-lrg) and (min-width: $layout-breakpoint-tablet) {
+    .approach-list-item-para {
+      font-size: 14px;
+    }
+    h4 {
+      margin-bottom: var(--spacing-16);
+    }
   }
 }
 

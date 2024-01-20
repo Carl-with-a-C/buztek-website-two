@@ -30,8 +30,8 @@ const Services = () => {
       <div className="services-main-container">
         <motion.div
           className="service-container service-one"
-          data-serviceOne={serviceOne}
-          layout
+          data-serviceone={serviceOne}
+          layout="true"
           onMouseEnter={() => {
             setServiceThree(false);
             setServiceTwo(false);
@@ -54,8 +54,8 @@ const Services = () => {
         </motion.div>
         <div
           className="service-container service-two"
-          data-serviceTwo={serviceTwo}
-          layout
+          data-servicetwo={serviceTwo}
+          layout="true"
           onMouseEnter={() => {
             setServiceThree(false);
             setServiceTwo(true);
@@ -77,8 +77,8 @@ const Services = () => {
         </div>
         <div
           className="service-container service-three"
-          data-serviceThree={serviceThree}
-          layout
+          data-servicethree={serviceThree}
+          layout="true"
           onMouseEnter={() => {
             setServiceThree(true);
             setServiceTwo(false);

@@ -67,7 +67,7 @@ const Nav = ({ theme, setTheme }) => {
   };
 
   return (
-    <motion.header className="header" data-menuOpen={menuOpen} layout>
+    <motion.header className="header" data-menuopen={menuOpen} layout>
       <motion.nav
         className="nav-container container"
         initial={{ opacity: 0 }}
@@ -112,7 +112,7 @@ const Nav = ({ theme, setTheme }) => {
           </div>
         </div>
         <div className="lightmode-switch-container">
-          <div className="switch" data-isOn={isOn} onClick={switchTheme}>
+          <div className="switch" data-ison={isOn} onClick={switchTheme}>
             <motion.div className="handle" layout transition={spring} />
           </div>
         </div>
@@ -122,7 +122,7 @@ const Nav = ({ theme, setTheme }) => {
               setMenuOpen(!menuOpen);
             }}
           >
-            <div className="menu-btn-text-container" data-menuOpen={menuOpen}>
+            <div className="menu-btn-text-container" data-menuopen={menuOpen}>
               <motion.div
                 className="menu-btn-text"
                 style={menuOpen ? { y: "-50%" } : { y: "0%" }}
@@ -153,7 +153,7 @@ const Nav = ({ theme, setTheme }) => {
               >
                 <motion.li variants={links}>
                   <a
-                    href="#home"
+                    href="/"
                     onClick={() => {
                       setMenuOpen(!menuOpen);
                     }}
@@ -234,7 +234,7 @@ const Nav = ({ theme, setTheme }) => {
                 </motion.li>
               </motion.ul>
             </div>
-            <motion.div
+            {/* <motion.div
               className="socials-links-container"
               initial={{ opacity: 0 }}
               animate={menuOpen ? { opacity: 1 } : { opacity: 0 }}
@@ -251,7 +251,7 @@ const Nav = ({ theme, setTheme }) => {
                   <h3>Linkedin</h3>
                 </li>
               </ul>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </motion.nav>

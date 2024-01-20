@@ -10,6 +10,12 @@
 .pricing-banner {
   display: grid;
   grid-template-areas: "top vid" "bottom bottom";
+  @media (max-width: $layout-breakpoint-desktop) {
+    grid-template-areas: "vid" "top" "bottom";
+    h1 {
+      line-height: 1;
+    }
+  }
 }
 
 .banner-video-container {
@@ -18,11 +24,17 @@
   grid-area: vid;
   justify-self: start;
   align-self: center;
+  @media (max-width: $layout-breakpoint-tablet) {
+    margin-bottom: var(--spacing-32);
+  }
 }
 
 .banner-video {
   width: calc(var(--spacing-256) * 1.2);
   border-radius: 8px;
+  @media (min-width: $layout-breakpoint-tablet) and (max-width: $layout-breakpoint-desktop) {
+    width: calc(var(--spacing-256) * 0.8);
+  }
 }
 
 .banner-blurb-para {
@@ -31,8 +43,10 @@
   h4 {
     opacity: 0.5;
   }
+  @media (max-width: $layout-breakpoint-tablet) {
+    width: 100%;
+  }
 }
-
 .banner-title-top {
   grid-area: top;
 }
