@@ -1,6 +1,13 @@
 .about-container {
   display: flex;
   margin-bottom: var(--spacing-256);
+  p {
+    font-size: var(--fs-18);
+    font-family: var(--ff-para);
+    line-height: 1.2;
+    font-weight: 500;
+    opacity: 0.5;
+  }
 }
 
 .arrow-container {
@@ -59,12 +66,6 @@
   gap: var(--spacing-32);
 }
 
-.about-blurb-para {
-  h4 {
-    opacity: 0.5;
-  }
-}
-
 .about-blurb-cta {
   margin-top: var(--spacing-32);
   position: relative;
@@ -78,6 +79,9 @@
     .about-cta-line {
       transform: translateX(100%);
     }
+  }
+  p {
+    opacity: 1;
   }
 }
 

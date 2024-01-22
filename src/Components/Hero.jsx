@@ -44,6 +44,13 @@ const Hero = () => {
         ease: [0.78, 0.01, 0.21, 1],
       },
     },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0,
+        ease: [0.78, 0.01, 0.21, 1],
+      },
+    },
   };
 
   const letter = {
@@ -113,6 +120,13 @@ const Hero = () => {
         ease: [0.78, 0.01, 0.21, 1],
       },
     },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0,
+        ease: [0.78, 0.01, 0.21, 1],
+      },
+    },
   };
   return (
     <section className="hero-section container">
@@ -133,6 +147,7 @@ const Hero = () => {
             variants={container}
             initial="hidden"
             animate="show"
+            exit="exit"
             layout
           >
             <motion.span
@@ -220,7 +235,7 @@ const Hero = () => {
             transition={{ delay: 2.5, duration: 1 }}
           >
             <Link to="/pricing">
-              <h4>Let's work together</h4>
+              <p className="hero-cta">Let's work together</p>
             </Link>
             <div className="hero-cta-line"></div>
           </motion.div>
@@ -230,6 +245,7 @@ const Hero = () => {
           variants={videoReveal}
           initial="hidden"
           animate="show"
+          exit="exit"
         >
           <motion.video
             className="hero-video"

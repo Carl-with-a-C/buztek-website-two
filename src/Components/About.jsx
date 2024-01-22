@@ -153,25 +153,25 @@ const About = ({ theme }) => {
                 <h4>What We Do and How We Do It</h4>
               </div>
               <div className="about-blurb-para para-one">
-                <h4>
+                <p>
                   At Buztek, we are not just a web design company; we are
                   architects of digital innovation, passionate about creating
                   online experiences that transcend expectations. Based in the
                   heart of Manchester, our team brings together a dynamic blend
                   of creativity, technical expertise, and a deep understanding
                   of the ever-evolving digital landscape.
-                </h4>{" "}
+                </p>{" "}
               </div>
               <div className="about-blurb-para para-two">
-                <h4>
+                <p>
                   Our mission is to empower businesses with cutting-edge web
                   solutions that not only captivate audiences but also drive
                   tangible results.
-                </h4>
+                </p>
               </div>
               <div className="about-blurb-cta">
                 <Link to="/pricing">
-                  <h4>Let's work together</h4>
+                  <p>Let's work together</p>
                 </Link>
                 <div className="about-cta-line"></div>
               </div>

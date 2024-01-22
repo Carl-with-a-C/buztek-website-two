@@ -10,7 +10,7 @@
 }
 
 [data-menuopen="true"] {
-  --nav-menu-color: black;
+  --nav-menu-color: var(--background);
 }
 
 [data-menuopen="false"] {
