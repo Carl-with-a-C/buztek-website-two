@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Nav = ({ theme, setTheme }) => {
-  const date = new Date();
+  const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   const twentyFourHours =
     date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
   const twentyFourMinutes =

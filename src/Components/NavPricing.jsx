@@ -67,7 +67,12 @@ const Nav = ({ theme, setTheme }) => {
   };
 
   return (
-    <motion.header className="header" data-menuopen={menuOpen} layout>
+    <motion.header
+      className="header"
+      data-menuopen={menuOpen}
+      layout
+      exit={{ opacity: 0 }}
+    >
       <motion.nav
         className="nav-container container"
         initial={{ opacity: 0 }}
