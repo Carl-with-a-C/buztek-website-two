@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import ProjectOne from "../Multimedia/Images/RJNW-website.jpg";
 import ProjectTwo from "../Multimedia/Images/Snowflakes-website-box.jpg";
@@ -119,9 +120,10 @@ const Projects = ({ theme }) => {
             src={theme === "dark" ? ArrowRW : ArrowR}
             alt="arrow pointing right"
           />
-          <h2>See all projects</h2>
+          <Link to="/pricing">
+            <h2>We bring your ideas to life</h2>
+          </Link>
         </div>
-        <div className="projects-cta-line"></div>
       </div>
     </section>
   );

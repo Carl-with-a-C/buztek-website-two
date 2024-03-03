@@ -60,6 +60,9 @@
 }
 
 .lightmode-switch-container {
+  min-width: calc(var(--spacing-64) + 4px);
+  margin-right: 0;
+
   @media (max-width: $layout-breakpoint-tablet) {
     display: none;
   }

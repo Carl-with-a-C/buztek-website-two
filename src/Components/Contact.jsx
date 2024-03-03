@@ -10,7 +10,9 @@ const Contact = () => {
         <div className="contact-e-t-container">
           <h2>0749 101 0694 </h2>
           <div className="contact-email-container">
-            <h2 href="mailto:info@buztek.co">info@buztek.co</h2>
+            <h2>
+              <a href="mailto:info@buztek.co">info@buztek.co</a>
+            </h2>
             <div className="contact-cta-line"></div>
           </div>
         </div>

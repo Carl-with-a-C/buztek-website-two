@@ -122,6 +122,8 @@ html {
 }
 
 .container {
+  max-width: 1480px;
+  margin-inline: auto;
   padding: 0 calc(var(--spacing-64));
   @media (max-width: $layout-breakpoint-tablet) {
     padding: 0 calc(var(--spacing-32));
@@ -131,15 +133,6 @@ html {
 button {
   cursor: pointer;
 }
-
-// .scroll-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   overflow: hidden;
-//   will-change: transform;
-// }
 
 a {
   text-decoration: none;

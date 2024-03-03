@@ -9,7 +9,7 @@ import { AnimatePresence } from "framer-motion";
 import "./sass/main.scss";
 
 function App() {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const defaultDark = "dark";
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
